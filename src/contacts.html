@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная страница</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
@@ -18,7 +18,7 @@
             margin-bottom: 30px;
         }
     </style>
-
+    
     <header>
         <img src="/src/assets/img/sber-logotype.png" alt="Логотип" width="300">
         <ul class="breadcrumb">
@@ -28,13 +28,41 @@
     </header>
 
     <main>
-        <h1 class="header-1">Добро пожаловать!</h1>
-        <p class="paragraph">СберБанк — крупнейший банк в России, Центральной и Восточной Европе, один из ведущих международных финансовых институтов</p>
-        <h3 class="header-3">Сбер – лидер рынка</h3>
-        <h4 class="header-4">Банк для народа</h4>
-        <p class="paragraph">Клиенты Сбера — большинство жителей страны, которым мы помогаем воплощать в жизнь их устремления и мечты.</p>
-        <h3 class="header-3">Миссия Сбербанка</h3>
-        <p class="paragraph">Мы даём людям уверенность и надёжность, делаем их жизнь лучше.</p>
+        <h2 class="header-2">Contact Us</h2>
+        <p class="paragraph">Вы можете связаться с нами в мобильном приложении СберБанк Онлайн</p>
+        <img src="/src/assets/img/desk1.jpg" alt="Изображение" width="350px">
+    
+        <h4 class="header-4">Address</h4>
+        <p class="paragraph">Головной офис находится в г. Москва</p>
+
+        <h4 class="header-4">Phone</h4>
+        <ul>
+            <li>+7 495 500 55 50 из-за границы</li>
+            <li>900 - с мобильного телефона</li>
+        </ul>
+
+        <h4 class="header-4">Online service</h4>
+        <ul>
+            <li><a href="#">Сайт Сбербанка</a></li>
+            <li><a href="mailto:info@sberbank.ru">info@sberbank.ru</a></li>
+        </ul>
+            
+        <p class="paragraph">Россия, Екатеринбург, ул. Малышева, 31-в. +7 800 555 35 35 </p>
+        <h4>Send us a message</h4>
+        
+        <form action="#" method="post" class="contact-form">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" class="input-field"><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" class="input-field"><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" class="input-field"></textarea><br><br>
+    
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
     </main>
 
     <hr>
@@ -50,6 +78,4 @@
         </ul>
         <p class="paragraph">Все права защищены.</p>
     </footer>
-<script src="index.js"></script>
 </body>
-</html>
