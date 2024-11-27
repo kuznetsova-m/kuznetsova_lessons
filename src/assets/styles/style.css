@@ -2,10 +2,16 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
-}
-
-.test {
-    color: red !important;
+.logo{
+    font-family: Inter; 
+    font-style: normal;
+    font-size: 20px; 
+    font-weight: 700; 
+    line-height: 18px; 
+    letter-spacing: -0.15px; 
+    text-align: left; 
+    text-underline-position: from-font; 
+    text-decoration-skip-ink: none; 
+    color: #2D66EE;
+    margin-left: 24;
 }
