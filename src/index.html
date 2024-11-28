@@ -9,31 +9,114 @@
     <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="header__logo text_color_blue">IT WEBSITE</div>
-
-    <nav class="header__nav">
-        <div class="header__nav-point">Services</div>
-        <div class="header__nav-point">Media</div>
-        <div class="header__nav-point">Cases</div>
-        <div class="header__nav-point">FAQ</div>
-        <div class="header__nav-point">Contacts</div>
-        <div class="header__nav-point">Contacts</div>
-    </nav>
+    <header class="header">
+        <div class="header__logo text_color_blue">IT WEBSITE</div>
     
-    <div class="header__contacts">
-        <div class="header__contacts-numbers">
-            <img src="/src/assets/icons/IconPhone.svg" alt="Icon" width="20" height="16">
-            <div class="header__contacts-numbers-num text_color_blue">+7 (111) 111 11 11</div>
-            <div class="header__contacts-numbers-num text_color_blue">+7 (111) 111 11 11</div>
+        <nav>
+            <button>Services</button>
+            <button>Media</button>
+            <button>Cases</button>
+            <button>FAQ</button>
+            <button>Contacts</button>
+        </nav>
+        
+        <div class="header__contacts">
+            <div>
+                <img src="/src/assets/icons/IconPhone.svg" alt="Icon">
+                <div class="text_color_blue">+7 (111) 111 11 11</div>
+                <div class="text_color_blue">+7 (111) 111 11 11</div>
+            </div>
+            <div>
+                <img src="/src/assets/icons/IconEmail.svg" alt="Icon">
+                <div class="text_color_blue">itcompany@mail.com</div>
+            </div>
         </div>
-        <div class="header__contacts-emails">
-            <img src="/src/assets/icons/IconEmail.svg" alt="Icon" width="20" height="16">
-            <div class="header__contacts-emails-email text_color_blue">itcompany@mail.com</div>
-        </div>
-    </div>
-</header>
+    </header>
 
-<script src="index.js"></script>
+    <main class="main">
+        <section class="welcome-page">
+            <article class="welcome-page-text">
+                <p class="welcome-page-text-main">Development of <span class="text_color_blue">mobile</span><br>
+                    <span class="text_color_blue">applications</span> and <span class="text_color_blue">web services</span> of<br>
+                    any complexity
+                </p>
+                
+                <p class="welcome-page-text-descr">We create mobile applications for iOS, Android that transfer your business to mobile<br>
+                    applications of your customers' devices
+                </p>
+            </article>
+            
+            <article class="welcome-page-phorm">
+                <p class="welcome-page-phorm-text">Leave your contacts and we will call you back<br>within 30 minutes</p>
+                <form class="welcome-page-phorm-block" action="/submit-form" method="post">
+                    <div class="welcome-page-phorm-block-phone">
+                        <div class="welcome-page-phorm-block-main-text">Phone number</div>
+                        <div class="welcome-page-phorm-block-group">
+                            <!-- <img src="/src/assets/img/Glag_KZ.png" alt="Icon" width="16" height="20"> -->
+                            <input type="tel" class="welcome-page-phorm-block-field" name="phone" placeholder="+7 (111) 111-11-11" required>
+                        </div>
+                    </div>
+            
+                    <div class="welcome-page-phorm-block-fullname">
+                        <div class="welcome-page-phorm-block-main-text">Full name</div>
+                        <input type="text" class="welcome-page-phorm-block-field" name="fullname" placeholder="Иван Иванов" required>
+                    </div>
+            
+                    <button type="submit" class="welcome-page-phorm-button">Get<br>consultation</button>
+                </form>
+            </article>
+
+            <div class="welcome-page-background">
+                <img src="srs/assets/img/Map_background.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="footer__logo">IT WEBSITE</div>
+
+        <section>
+            <div>
+                <div>
+                    <img src="/src/assets/icons/Footer_IconPhone.svg" alt="Icon">
+                    <div>Contact nums</div>
+                </div>
+                <div>+7 (778) 395 90 26</div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="/src/assets/icons/Footer_IconEmail.svg" alt="Icon">
+                    <div>Post</div>
+                </div>
+                <div>mail@mail.com</div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="/src/assets/icons/Footer_IconAddress.svg" alt="Icon">
+                    <div>Address</div>
+                </div>
+                <div>City city, steet st. 90</div>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="/src/assets/icons/Footer_IconFile.svg" alt="Icon">
+                    <div>Leave a request</div>
+                </div>
+                <div>Leave a request</div>
+            </div>
+        </section>
+
+        <div>
+            <img src="/src/assets/icons/Map.svg" alt="Icon">
+            <div>We work throughout world</div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

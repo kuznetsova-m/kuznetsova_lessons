@@ -3,7 +3,11 @@
 @import "./utils.css";
 
 body {
-    background-color: #121212;
+    background-color: #F2F4F7;
+    width: 1140;
+    height: 6024;
+    margin: 0;
+    padding: 0;
 }
 
 .text_color_blue {
@@ -12,8 +16,11 @@ body {
 
 .header{
     z-index: 2;
+    top: 10px;
+    left: 50px;
+    right: 50px;
     margin-top: 10px;
-    width: Hug (1,124px)px;
+    width: Hug(1,124px)px;
     height: Hug (56px)px;
     padding: 16px 24px 16px 24px;
     gap: 80px;
@@ -22,8 +29,9 @@ body {
     background-color: white;
     position: fixed;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     transform: translateX(0%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .header__logo {
@@ -36,12 +44,12 @@ body {
     text-align: left; 
 }
 
-.header__nav,
+header nav,
 .header__contacts {
     display: flex;
 }
 
-.header__nav-point {
+header nav button {
     font-family: SFProText;
     font-size: 14px;
     font-weight: 500;
@@ -51,14 +59,23 @@ body {
     color: #101828;
     padding-left: 12px;
     padding-right: 12px;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
 }
 
-.header__contacts-numbers {
+header nav button:hover {
+    text-decoration: underline;
+}
+
+.header__contacts > div {
+    margin-left: 16px;
     display: flex;
     align-items: center;
 }
 
-.header__contacts-numbers-num {
+
+.header__contacts > div > div{
     margin-left: 8px;
     margin-right: 8px;
     font-size: 14px;
@@ -66,17 +83,210 @@ body {
     font-weight: 500;
 }
 
-.header__contacts-emails {
-    margin-left: 16px;
+.footer{
+    width: 1224px;
+    height: 222px;
+    background-color: #101828;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 24px 24px 24px 24px;
+    border-radius: 12px 12px 12px 12px;
+    gap: 40;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.footer__logo{
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    color: #FFFFFF;
+}
+
+.footer section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer section > div > div:first-child {
     display: flex;
     align-items: center;
 }
 
-.header__contacts-emails-email {
-    padding-left: 8px;
+.footer section > div > div:first-child div {
     font-size: 14px;
     font-family: SFProText;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -0.15px;
+    color: #98A2B3;
+    padding-left: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: left;
+}
+
+.footer section > div > div:last-child {
+    font-size: 17px;
+    font-family: SFProText;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.footer > div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.footer > div:last-child div {
+    font-size: 13px;
+    font-family: SFProText;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+    color: #FFFFFF;
+    padding-left: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.welcome-page{
+    width: 1440px;
+    height: 900px;
+    gap: 0px;
+    opacity: 0px;
+    padding-top: 86px;
+}
+
+.welcome-page-text{
+    width: Hug(600px)px;
+    height: Hug(220px)px;
+    gap: 24px;
+}
+
+.welcome-page-text-main{
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 144%;
+    letter-spacing: 0.33px;
+    margin-left: 108px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #101828
+}
+
+.welcome-page-text-descr{
+    font-size: 15px;
+    font-family: SFProText;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    margin-left: 108px;
+    color: #101828;
+}
+
+.welcome-page-phorm{ 
+    width: 676px;
+    height: 186px;
+    gap: 32px;
+    padding: 3px 24px 3px 24px;
+    border-radius: 12px 12px 12px 12px;
+    margin-top: 64px;
+    margin-left: 108px;
+    top: 444px;
+    left: 108px;
+    opacity: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08),
+                 0px 0px 24px rgba(0, 0, 0, 0.16);
+}
+
+.welcome-page-phorm-text{
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #101828;
+    
+}
+
+.welcome-page-phorm-block{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.welcome-page-phorm-block-main-text{
+    font-size: 13px;
+    font-family: SFProText;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.08px;
+    color: #667085;
+    padding-bottom: 8px;
+}
+
+.welcome-page-phorm-block-group{
+    display: flex;
+    align-items: center;
+}
+
+.welcome-page-phorm-block-field{
+    font-size: 17px;
+    font-family: SFProText;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    color: #101828;
+    border: none;
+    border-bottom: 1px solid #667085; 
+    outline: none;
+    background: transparent;
+}
+
+.welcome-page-phorm-button{
+    width: 132px;
+    height: 58px;
+    gap: 8;
+    padding: 11px 24px 11px 24px;
+    border-radius: 8px 8px 8px 8px;
+    background: #2D66EE;
+    font-family: SFProText;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
 }
