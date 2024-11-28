@@ -2,7 +2,31 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.logo{
+body {
+    background-color: #121212;
+}
+
+.text_color_blue {
+    color: #2D66EE;
+}
+
+.header{
+    z-index: 2;
+    margin-top: 10px;
+    width: Hug (1,124px)px;
+    height: Hug (56px)px;
+    padding: 16px 24px 16px 24px;
+    gap: 80px;
+    border-radius: 12px 12px 12px 12px;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(0%);
+}
+
+.header__logo {
     font-family: Inter; 
     font-style: normal;
     font-size: 20px; 
@@ -10,8 +34,49 @@
     line-height: 18px; 
     letter-spacing: -0.15px; 
     text-align: left; 
-    text-underline-position: from-font; 
-    text-decoration-skip-ink: none; 
-    color: #2D66EE;
-    margin-left: 24;
+}
+
+.header__nav,
+.header__contacts {
+    display: flex;
+}
+
+.header__nav-point {
+    font-family: SFProText;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    text-align: left;
+    color: #101828;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.header__contacts-numbers {
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts-numbers-num {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-family: SFProText;
+    font-weight: 500;
+}
+
+.header__contacts-emails {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.header__contacts-emails-email {
+    padding-left: 8px;
+    font-size: 14px;
+    font-family: SFProText;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.15px;
 }
