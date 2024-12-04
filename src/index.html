@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <link rel="stylesheet" href="/src/assets/styles/style.css" />
   </head>
 
   <body>
@@ -59,7 +59,7 @@
       </p>
     </div>
 
-    <div class="main__feedback">
+    <article class="main__feedback">
       <h3 class="subheader__text">
         Leave your contacts and we will call you back<br />within 30 minutes
       </h3>
@@ -68,7 +68,7 @@
           <label for="feedback__phone" class="form__label">Phone number</label>
           <div class="feedback__field--phone">
             <img
-              id="feedback_image"
+              id="feedback__image"
               src="/src/assets/img/IconFlag.png"
               alt="FlagIcon"
             />
@@ -95,10 +95,10 @@
 
         <button type="submit" class="feedback__button">Get consultation</button>
       </form>
-    </div>
+    </article>
 
     <hr />
-    <div class="development__info">
+    <section class="development__info">
       <div class="development__technologies">
         <h2 class="header__text">Full development cycle</h2>
         <p class="default__text">We use proven technologies</p>
@@ -124,16 +124,16 @@
           <li class="development__item"><a href="#">IT consulting</a></li>
         </ul>
       </div>
-    </div>
+    </section>
 
     <hr />
-    <div class="projects">
+    <section class="projects">
       <h2 class="header__text">
         Developed more than <span class="text_color_blue">100</span> projects in
         <span class="text_color_blue">15</span> industries
       </h2>
       <div class="project__list">
-        <div class="project__column1">
+        <article class="project__column">
           <div class="project__item">
             <img
               class="project__image"
@@ -163,8 +163,8 @@
             />
             <p>Game projects</p>
           </div>
-        </div>
-        <div class="project__column2">
+        </article>
+        <article class="project__column">
           <div class="project__item">
             <img class="project__image" src="/src/assets/icons/education.svg" />
             <p>Education</p>
@@ -178,7 +178,10 @@
             <p>Medicine, health</p>
           </div>
           <div class="project__item">
-            <img class="project__image" src="/src/assets/icons/restaurant.svg" />
+            <img
+              class="project__image"
+              src="/src/assets/icons/restaurant.svg"
+            />
             <p>Restaurants, food delivery</p>
           </div>
           <div class="project__item">
@@ -188,8 +191,8 @@
             />
             <p>Marketplaces</p>
           </div>
-        </div>
-        <div class="project__column3">
+        </article>
+        <article class="project__column">
           <div class="project__item">
             <img class="project__image" src="/src/assets/icons/ar.svg" />
             <p>AR technology</p>
@@ -210,11 +213,11 @@
             <img class="project__image" src="/src/assets/icons/online.svg" />
             <p>Online cources</p>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <div class="clients">
+    <section class="clients">
       <h2 class="header__text">Projects we are proud of</h2>
       <p class="default__text">
         Our software development company is truly proud of the wonderful clients
@@ -276,12 +279,12 @@
         </div>
       </div>
       <img class="aside__image" src="/src/assets/img/i-teka.png" />
-    </div>
+    </section>
 
     <hr />
 
-    <div class="contact-form">
-      <div class="contact-form__text">
+    <section class="contact">
+      <div class="contact__text">
         <h3 class="header__text text_color_white">
           Let's discuss<br />Your project
         </h3>
@@ -290,22 +293,22 @@
           and terms of its development
         </p>
       </div>
-      <div class="contact-form__form">
+      <article class="contact__feedback">
         <form class="contact__form" action="" method="">
           <div class="feedback__field">
-            <label for="feedback__phone" class="form__label"
+            <label for="contact__phone" class="form__label"
               >Best phone number</label
             >
             <div class="feedback__field--phone">
               <img
-                id="feedback_image"
+                id="feedback__image"
                 src="/src/assets/img/IconFlag.png"
                 alt="FlagIcon"
               />
               <input
                 type="tel"
-                id="feedback__phone"
-                name="feedback__phone"
+                id="contact__phone"
+                name="contact__phone"
                 placeholder="+7 (111) 111-11-11"
                 required
               />
@@ -313,11 +316,11 @@
           </div>
 
           <div class="feedback__field">
-            <label for="feedback__name" class="form__label">Full name</label>
+            <label for="contact__name" class="form__label">Full name</label>
             <input
               type="text"
-              id="feedback__name"
-              name="feedback__name"
+              id="contact__name"
+              name="contact__name"
               placeholder="Иван Иванов"
               required
             />
@@ -327,16 +330,16 @@
             Discuss the project
           </button>
         </form>
-      </div>
-    </div>
+      </article>
+    </section>
 
     <hr />
 
-    <div class="development__stages">
+    <section class="development__stages">
       <div class="development__stages__text">
         <h3 class="header__text">Application Development Stages</h3>
       </div>
-      <div class="stage__item left__column">
+      <article class="stage__item left__column">
         <h4 class="stage__header">Analysis</h4>
         <img class="stage__image" src="/src/assets/icons/planing.svg" />
         <p class="default__text">
@@ -344,52 +347,52 @@
           the business processes and technologies of the customer and the needs
           of users.
         </p>
-      </div>
-      <div class="stage__item">
+      </article>
+      <article class="stage__item">
         <h4 class="stage__header">Testing</h4>
         <img class="stage__image" src="/src/assets/icons/security.svg" />
         <p class="default__text">
           We carry out functional testing and do bug fixes. We adapt the
           application to different phone resolutions
         </p>
-      </div>
-      <div class="stage__item left__column">
+      </article>
+      <article class="stage__item left__column">
         <h4 class="stage__header">Design</h4>
         <img class="stage__image" src="/src/assets/icons/graphic_design.svg" />
         <p class="default__text">
           We adapt the customer's corporate identity to the platform guidelines.
           We draw convenient and understandable interfaces.
         </p>
-      </div>
-      <div class="stage__item">
+      </article>
+      <article class="stage__item">
         <h4 class="stage__header">Launching</h4>
         <img class="stage__image" src="/src/assets/icons/hosting.svg" />
         <p class="default__text">
           We design the application page and publish it in the App Store and
           Google Play stores.
         </p>
-      </div>
-      <div class="stage__item left__column">
+      </article>
+      <article class="stage__item left__column">
         <h4 class="stage__header">Development</h4>
         <img class="stage__image" src="/src/assets/icons/computer_coding.svg" />
         <p class="default__text">
           We create an extensible architecture, write clean and stable code. We
           integrate with customer technologies.
         </p>
-      </div>
-      <div class="stage__item">
+      </article>
+      <article class="stage__item">
         <h4 class="stage__header">Support</h4>
         <img class="stage__image" src="/src/assets/icons/application.svg" />
         <p class="default__text">
           We monitor the stability of the application, update it for new devices
           and versions of iOS and Android.
         </p>
-      </div>
-    </div>
+      </article>
+    </section>
 
     <hr />
 
-    <div class="company__about">
+    <section class="company__about">
       <div class="company__text">
         <h3 class="header__text">Our team</h3>
         <p class="default__text">
@@ -422,32 +425,30 @@
           alt="play_video"
         />
       </div>
-    </div>
+    </section>
 
     <hr />
 
-    <div class="book__advert">
+    <section class="book__advert">
       <div class="book__advert__text">
         <h3 class="header__text text_color_white">
           Get the book for free by leaving<br />your contacts
         </h3>
       </div>
-      <div class="book__advert__form">
+      <article class="book__advert__form">
         <form class="book__form" action="" method="">
           <div class="feedback__field">
-            <label for="feedback__phone" class="form__label">
-              Phone number
-            </label>
+            <label for="book__phone" class="form__label"> Phone number </label>
             <div class="feedback__field--phone">
               <img
-                id="feedback_image"
+                id="feedback__image"
                 src="/src/assets/img/IconFlag.png"
                 alt="FlagIcon"
               />
               <input
                 type="tel"
-                id="feedback__phone"
-                name="feedback__phone"
+                id="book__phone"
+                name="book__phone"
                 placeholder="+7 (111) 111-11-11"
                 required
               />
@@ -457,24 +458,24 @@
           <div class="feedback__field">
             <input
               type="text"
-              id="feedback__name"
+              id="book__name"
               class="book__form-name"
-              name="feedback__name"
+              name="book__name"
               placeholder="Your full name"
               required
             />
           </div>
 
           <div class="book__field">
-            <label for="feedback__email" class="form__label">email</label>
+            <label for="book__email" class="form__label">email</label>
             <div class="book__field--email">
               <input
-              type="email"
-              id="feedback__email"
-              name="feedback__email"
-              placeholder="mail@mail.com"
-              required
-            />
+                type="email"
+                id="book__email"
+                name="book__email"
+                placeholder="mail@mail.com"
+                required
+              />
             </div>
           </div>
 
@@ -482,39 +483,37 @@
             Send my ebook to my mail
           </button>
         </form>
-      </div>
+      </article>
       <div class="book__image">
         <img src="/src/assets/img/Book.png" alt="book" />
       </div>
-    </div>
+    </section>
 
     <hr />
 
-    <div class="faq">
+    <section class="faq">
       <div class="faq__text">
         <h3 class="header__text">FAQ</h3>
       </div>
       <div class="faq__questions">
-        <div class="question">
-          <h4 class="stage__header">
-            What is the cost of a mobile application?
-          </h4>
+        <article class="question">
+          <h4 class="faq__header">What is the cost of a mobile application?</h4>
           <img
             class="faq__image"
             src="/src/assets/icons/IconPlus.svg"
             alt="open_block"
           />
-        </div>
-        <div class="question">
-          <h4 class="stage__header">How long will development take?</h4>
+        </article>
+        <article class="question">
+          <h4 class="faq__header">How long will development take?</h4>
           <img
             class="faq__image"
             src="/src/assets/icons/IconPlus.svg"
             alt="open_block"
           />
-        </div>
-        <div class="question border__bottom">
-          <h4 class="stage__header">
+        </article>
+        <article class="question border__bottom">
+          <h4 class="faq__header">
             Do you provide a guarantee for the mobile application?
           </h4>
           <img
@@ -522,9 +521,9 @@
             src="/src/assets/icons/IconPlus.svg"
             alt="open_block"
           />
-        </div>
-        <div class="question border__bottom">
-          <h4 class="stage__header">
+        </article>
+        <article class="question border__bottom">
+          <h4 class="faq__header">
             I will not tell my idea, do you guarantee confidentiality?
           </h4>
           <img
@@ -532,16 +531,16 @@
             src="/src/assets/icons/IconPlus.svg"
             alt="open_block"
           />
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
 
     <hr />
 
     <footer class="footer">
       <a href="#" class="footer__logo logo text_color_white">IT WEBSITE</a>
       <div class="footer__main">
-        <div class="footer__item">
+        <article class="footer__item">
           <img
             class="footer__icon icon__grayscale"
             src="/src/assets/icons/IconPhone.svg"
@@ -549,19 +548,19 @@
           />
           <p class="form__label footer__text">Contact nums</p>
           <p class="default__text text_color_white">+7 (778) 395 90 26</p>
-        </div>
+        </article>
 
-        <div class="footer__item">
+        <article class="footer__item">
           <img
             class="footer__icon icon__grayscale"
             src="/src/assets/icons/IconEmail.svg"
             alt="Icon"
           />
           <p class="form__label footer__text">Post</p>
-          <p class="default__text text_color_white">mail@mail.com6</p>
-        </div>
+          <p class="default__text text_color_white">mail@mail.com</p>
+        </article>
 
-        <div class="footer__item">
+        <article class="footer__item">
           <img
             class="footer__icon icon__grayscale"
             src="/src/assets/icons/IconGeo.svg"
@@ -569,9 +568,9 @@
           />
           <p class="form__label footer__text">Address</p>
           <p class="default__text text_color_white">City city, steet st. 90</p>
-        </div>
+        </article>
 
-        <div class="footer__item">
+        <article class="footer__item">
           <img
             class="footer__icon"
             src="/src/assets/icons/IconFile.svg"
@@ -579,7 +578,7 @@
           />
           <p class="form__label footer__text">Leave a request</p>
           <p class="default__text text_color_white">Leave a request</p>
-        </div>
+        </article>
         <div class="footer__bottom">
           <img class="footer__map" src="/src/assets/icons/Map.svg" alt="Map" />
           <p class="default__text text_color_white">We work throughout world</p>
