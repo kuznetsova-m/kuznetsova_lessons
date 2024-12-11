@@ -13,6 +13,9 @@
 
   <body>
     <header class="header">
+      <div class="burger">
+        <div class="burger__menu"></div>
+      </div>
       <a class="logo text_color_blue" href="#">IT WEBSITE</a>
 
       <nav class="header__menu">
@@ -47,98 +50,100 @@
     </header>
 
     <section class="main">
-      <div class="main__description">
-        <h2 class="description__header header__text">
-          Development of
-          <span class="text_color_blue">mobile applications</span> and
-          <span class="text_color_blue">web services</span> of any complexity
-        </h2>
+      <div class="container">
+        <div class="main__description">
+          <h2 class="description__header header__text">
+            Development of
+            <span class="text_color_blue">mobile applications</span> and
+            <span class="text_color_blue">web services</span> of any complexity
+          </h2>
 
-        <p class="default__text">
-          We create mobile applications for iOS, Android that transfer your
-          business to mobile applications of your customers' devices
-        </p>
-      </div>
+          <p class="default__text">
+            We create mobile applications for iOS, Android that transfer your
+            business to mobile applications of your customers' devices
+          </p>
+        </div>
 
-      <article class="main__feedback">
-        <h3 class="subheader__text">
-          Leave your contacts and we will call you back<br />within 30 minutes
-        </h3>
-        <form class="feedback__form" action="" method="">
-          <div class="feedback__field">
-            <label for="feedback__phone" class="form__label"
-              >Phone number</label
-            >
-            <div class="feedback__field--phone">
-              <img
-                id="feedback_image"
-                src="/src/assets/img/IconFlag.png"
-                alt="FlagIcon"
-              />
+        <article class="main__feedback">
+          <h3 class="subheader__text">
+            Leave your contacts and we will call you back within 30 minutes
+          </h3>
+          <form class="feedback__form" action="" method="">
+            <div class="feedback__field">
+              <label for="feedback__phone" class="form__label"
+                >Phone number</label
+              >
+              <div class="feedback__field--phone">
+                <img
+                  id="feedback_image"
+                  src="/src/assets/img/IconFlag.png"
+                  alt="FlagIcon"
+                />
+                <input
+                  type="tel"
+                  id="feedback__phone"
+                  name="feedback__phone"
+                  placeholder="+7 (111) 111-11-11"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="feedback__field">
+              <label for="feedback__name" class="form__label">Full name</label>
               <input
-                type="tel"
-                id="feedback__phone"
-                name="feedback__phone"
-                placeholder="+7 (111) 111-11-11"
+                type="text"
+                id="feedback__name"
+                name="feedback__name"
+                placeholder="Иван Иванов"
                 required
               />
             </div>
-          </div>
+            <button type="submit" class="feedback__button">
+              Get consultation
+            </button>
+          </form>
+        </article>
 
-          <div class="feedback__field">
-            <label for="feedback__name" class="form__label">Full name</label>
-            <input
-              type="text"
-              id="feedback__name"
-              name="feedback__name"
-              placeholder="Иван Иванов"
-              required
+        <div class="main__background__image">
+          <div class="main__background">
+            <img
+              src="assets/img/детали отзыва.jpg"
+              alt="детали отзыва"
+              class="background__image"
+            />
+            <img
+              src="assets/img/новый чат.jpg"
+              alt="новый чат"
+              class="background__image"
+            />
+            <img
+              src="assets/img/комментарии к отзыву.jpg"
+              alt="комментарии"
+              class="background__image main__image"
+            />
+            <img
+              src="assets/img/главная со списком организации.jpg"
+              alt="главная"
+              class="background__image"
+            />
+            <img
+              src="assets/img/Сообщения.jpg"
+              alt="Сообщения"
+              class="background__image"
+            />
+            <img
+              src="assets/img/настройки.jpg"
+              alt="настройки"
+              class="background__image"
             />
           </div>
-          <button type="submit" class="feedback__button">
-            Get consultation
-          </button>
-        </form>
-      </article>
-
-      <div class="main__container">
-        <div class="main__background">
-          <img
-            src="/src/assets/img/детали отзыва.jpg"
-            alt="детали отзыва"
-            class="background__image"
-          />
-          <img
-            src="/src/assets/img/новый чат.jpg"
-            alt="новый чат"
-            class="background__image"
-          />
-          <img
-            src="/src/assets/img/комментарии к отзыву.jpg"
-            alt="комментарии"
-            class="background__image main__image"
-          />
-          <img
-            src="/src/assets/img/главная со списком организации.jpg"
-            alt="главная"
-            class="background__image"
-          />
-          <img
-            src="/src/assets/img/Сообщения.jpg"
-            alt="Сообщения"
-            class="background__image"
-          />
-          <img
-            src="/src/assets/img/настройки.jpg"
-            alt="настройки"
-            class="background__image"
-          />
         </div>
       </div>
     </section>
 
     <section class="development">
-      <div class="development__info">
+      <div class="container">
         <div class="development__technologies">
           <h2 class="header__text">Full development cycle</h2>
           <p class="default__text">We use proven technologies</p>
@@ -229,7 +234,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <!-- <section class="projects">
       <div class="project__header">
         <h2 class="header__text">
           Developed more than <span class="text_color_blue">100</span> projects
@@ -643,10 +648,10 @@
           <img src="/src/assets/img/Book.png" alt="book" />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="faq">
-      <div class="faq__container">
+      <div class="container">
         <div class="faq__text">
           <h3 class="header__text">FAQ</h3>
         </div>
@@ -662,7 +667,7 @@
                 alt="open_block"
               />
             </div>
-            <div class="question border__bottom">
+            <div class="question border__bottom1">
               <h4 class="stage__header">
                 Do you provide a guarantee for the mobile application?
               </h4>
@@ -682,7 +687,7 @@
                 alt="open_block"
               />
             </div>
-            <div class="question border__bottom">
+            <div class="question border__bottom2">
               <h4 class="stage__header">
                 I will not tell my idea, do you guarantee confidentiality?
               </h4>
@@ -695,9 +700,11 @@
           </article>
         </div>
       </div>
+    </section>
 
-      <footer class="footer">
-        <a href="#" class="footer__logo logo text_color_white">IT WEBSITE</a>
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="footer__logo text_color_white">IT WEBSITE</a>
         <div class="footer__main">
           <article class="footer__item">
             <div class="footer__item__header">
@@ -753,8 +760,8 @@
           <img class="footer__map" src="/src/assets/icons/Map.svg" alt="Map" />
           <p class="default__text text_color_white">We work throughout world</p>
         </div>
-      </footer>
-    </section>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
