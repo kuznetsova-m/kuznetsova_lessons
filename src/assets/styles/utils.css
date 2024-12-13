@@ -1,9 +1,8 @@
-.bold {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+body .bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
-
-.medium {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-}
+body .medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}/*# sourceMappingURL=utils.css.map */
