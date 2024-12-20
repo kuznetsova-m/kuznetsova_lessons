@@ -1,6 +1,6 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+@import "./global.scss";
+@import "./fonts.scss";
+@import "./utils.scss";
 
 @media (max-width: 767px) {
     body {
@@ -829,7 +829,7 @@
                 padding-top: 50px;
                 padding-right: 20px;
                 padding-bottom: 50px;
-                max-width: 1200px;
+                max-width: 1050px;
 
                 .development__technologies {
                     max-width: 345px;
@@ -1344,7 +1344,7 @@
                             }
 
                             100% {
-                                transform: translateY(230%);
+                                transform: translateY(240%);
                             }
                         }
                     }
@@ -1396,15 +1396,15 @@
                             font-size: 14px;
                             font-weight: 500;
                             line-height: 1.1px;
-                        }
 
-                        &:after {
-                            content: " /\00A0";
-                            color: #2d66ee;
-                        }
+                            &:after {
+                                content: " /\00A0";
+                                color: #2d66ee;
+                            }
 
-                        &:last-child:after {
-                            content: "";
+                            &:last-child:after {
+                                content: "";
+                            }
                         }
                     }
                 }
