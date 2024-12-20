@@ -1,7 +1,62 @@
 @charset "UTF-8";
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), local("Inter-Bold"), local("Inter Bold"), url("/static/fonts/Inter-Bold.ttf") format("truetype"), url("/static/fonts/Inter-Bold.woff2") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), local("Inter-Medium"), local("Inter Medium"), url("/static/fonts/Inter-Medium.ttf") format("truetype"), url("/static/fonts/Inter-Medium.woff2") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), local("Inter-Regular"), local("Inter Regular"), url("/static/fonts/Inter-Regular.ttf") format("truetype"), url("/static/fonts/Inter-Regular.woff2") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), local("Inter-Regular"), local("Inter Regular"), url("/static/fonts/Inter-Regular.ttf") format("truetype"), url("/static/fonts/Inter-Regular.woff2") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SFProText";
+  src: local("SFProText"), local("SFProText-Medium"), local("SFProText Medium"), url("/static/fonts/SFProText-Medium.ttf") format("truetype");
+  /*url("/static/fonts/Inter-Regular.woff2") format("woff");*/
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SFProText";
+  src: local("SFProText"), local("SFProText-Regular"), local("SFProText Regular"), url("/static/fonts/SFProText-Regular.ttf") format("truetype");
+  /*url("/static/fonts/Inter-Regular.woff2") format("woff");*/
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SFProText";
+  src: local("SFProText"), local("SFProText-Semibold"), local("SFProText Semibold"), url("/static/fonts/SFProText-Semibold.ttf") format("truetype");
+  /*url("/static/fonts/Inter-Regular.woff2") format("woff");*/
+  font-weight: 600;
+}
+body .bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+body .medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
 @media (max-width: 767px) {
   body {
     margin: 0;
@@ -1542,7 +1597,7 @@
     cursor: pointer;
     border-radius: 8px;
   }
-  body .clients .container .clients__companies :hover {
+  body .clients .container .clients__companies .clients__button1:hover {
     background-color: #0f52ee;
   }
   body .clients .container .iteka {
@@ -2488,11 +2543,11 @@
     font-weight: 500;
     line-height: 1.1px;
   }
-  body .development .container .development__technologies .development__tools:after {
+  body .development .container .development__technologies .development__tools .tool:after {
     content: " / ";
     color: #2d66ee;
   }
-  body .development .container .development__technologies .development__tools:last-child:after {
+  body .development .container .development__technologies .development__tools .tool:last-child:after {
     content: "";
   }
   body .development .container .development__categories {
@@ -2628,7 +2683,7 @@
     cursor: pointer;
     border-radius: 8px;
   }
-  body .clients .container .clients__companies .clients__button1 :hover {
+  body .clients .container .clients__companies .clients__button1:hover {
     background-color: #0f52ee;
   }
   body .clients .container .iteka {

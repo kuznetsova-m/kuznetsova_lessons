@@ -1,6 +1,6 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+@import "./global.scss";
+@import "./fonts.scss";
+@import "./utils.scss";
 
 @media (max-width: 767px) {
     body {
@@ -1771,10 +1771,10 @@
                         text-align: center;
                         cursor: pointer;
                         border-radius: 8px;
-                    }
 
-                    :hover {
-                        background-color: #0f52ee;
+                        &:hover {
+                            background-color: #0f52ee;
+                        }
                     }
                 }
 
@@ -2864,15 +2864,15 @@
                             font-size: 14px;
                             font-weight: 500;
                             line-height: 1.1px;
-                        }
 
-                        &:after {
-                            content: " /\00A0";
-                            color: #2d66ee;
-                        }
+                            &:after {
+                                content: " /\00A0";
+                                color: #2d66ee;
+                            }
 
-                        &:last-child:after {
-                            content: "";
+                            &:last-child:after {
+                                content: "";
+                            }
                         }
                     }
                 }
@@ -3030,7 +3030,7 @@
                         cursor: pointer;
                         border-radius: 8px;
 
-                        :hover {
+                        &:hover {
                             background-color: #0f52ee;
                         }
                     }
